@@ -70,7 +70,7 @@
    
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="{{asset('admin_assets/js/main.js')}}"></script>
 
 </body>
 
