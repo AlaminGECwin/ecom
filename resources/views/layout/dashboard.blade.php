@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon text-dark pr-3">Click</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -28,21 +28,27 @@
             <a class="nav-link " aria-current="page" href="{{url('/greeting')}}">Greeting</a>
             </li>
             <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{{url('/gs/greeting')}}">Prefix->Greeting</a>
+            </li>
+            <li class="nav-item">
             <a class="nav-link " aria-current="page" href="{{url('/about')}}">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{{url('/gs/about')}}">Prefix->About</a>
             </li>
             @yield('k')
 
             <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="{{ URL::to('/server') }}">Ki</a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown link
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{{url('/server/koi')}}">Koi geli?</a></li>
+                <li><a class="dropdown-item" href="{{route('name_route')}}">Name Route</a></li>
+                <li><a class="dropdown-item" href="{{route('name_route2')}}">Name Route with md5</a></li>
             </ul>
             </li>
         </ul>
