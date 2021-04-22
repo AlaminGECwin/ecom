@@ -15,7 +15,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-info bg-warning">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="{{route('admin.dashboard')}}">Admin Dashboard</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-dark pr-3">Click</span>
         </button>
@@ -48,7 +48,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="{{url('/server/koi')}}">Koi geli?</a></li>
                 <li><a class="dropdown-item" href="{{route('name_route')}}">Name Route</a></li>
-                <li><a class="dropdown-item" href="{{route('name_route2')}}">Name Route with md5</a></li>
+                <li><a class="dropdown-item" href="{{route('admin.dashboard.test')}}">ADT Route with md5</a></li>
             </ul>
             </li>
         </ul>

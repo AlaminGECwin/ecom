@@ -19,4 +19,13 @@ class ProvisionServer extends Controller
     public function kire(){
         echo "kire bujli?";
     }
+
+    public function dashboard(){
+        return view('admin.admin');
+    }
+
+    public function dashboard_test(){
+        return view('admin.admin_test');
+    }
+
 }

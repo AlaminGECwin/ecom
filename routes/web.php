@@ -33,3 +33,5 @@ Route::get('/server',[ProvisionServer::class, 'ki']);
 Route::get('/server/koi',[ProvisionServer::class, 'koi']);
 Route::get('/server/server/server/server/server/server/server',[ProvisionServer::class, 'kire'])->name('name_route');
 Route::get(md5('/server/server/server/server/server/server/server'),[ProvisionServer::class, 'kire'])->name('name_route2');
+Route::get('/admin/dashboard',[ProvisionServer::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/dashboard/test',[ProvisionServer::class, 'dashboard_test'])->name('admin.dashboard.test');
